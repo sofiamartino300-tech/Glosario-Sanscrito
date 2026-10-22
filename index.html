@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario Sánscrito</title>
+    <meta name="description" content="Glosario de términos en sánscrito con sus etimologías, significados, pronunciaciones y usos frecuentes.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Firebase App (núcleo) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+<!-- Firestore -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+
+</head>
+<body class="light-mode">
+    <header>
+      <div id="titulo">
+        <h1>Glosario Sánscrito</h1>
+      </div>
+      <div id="logo">
+        <img src="IMGS\Logo Blanco.jpeg" alt="Logo en Blanco" class="logo-claro">
+        <img src="IMGS\Logo Violeta.jpeg" alt="Logo en BVioleta" class="logo-oscuro">
+        <h2>Espacio Vidya</h2>
+      </div>
+    </header>
+    <main>
+  <div class="contenedor">
+    <section id="buscarla">
+      <input type="text" id="buscar" placeholder="Escribe aquí tu palabra">
+      <button onclick="buscarPalabra()">Buscar</button>
+      <button onclick="toggleMode()">Cambiar modo</button>
+      <div class="resultado"></div>
+    </section>
+
+    <aside class="sidebar">
+      <h3>Palabras más buscadas</h3>
+      <ul id="lista-buscadas"></ul>
+    </aside>
+  </div>
+</main>
+   <script type="module" src="script.js"></script>
+
+</body>
+</html>
+
+        

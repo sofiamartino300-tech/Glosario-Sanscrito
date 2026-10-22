@@ -1,0 +1,144 @@
+:root{
+    --color-primarioO: #60327B;
+    --color-primarioC: #F7F6F2;
+    --color-secundarioC: #f5ddff;
+    --color-secundarioO: #42274E;
+    --color-textoC: #24192E;
+    --color-textoO: #ECE4F1;
+    --color-acentoO: #4D69B3;
+    --color-acentoC: #D3DAEC;
+}
+body.dark-mode header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 2px;
+   background-color: var(--color-primarioO);
+   margin:  0px;
+   color: var(--color-textoO);
+   width: 100%;
+}
+body.light-mode header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 2px;
+   background-color: var(--color-primarioC);
+   margin:  0px;
+   color: var(--color-textoC);
+   width: 100%;
+}
+#logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body.dark-mode #titulo{
+  font-size: 1rem;
+  color: var(--color-textoO);
+}
+body.light-mode #titulo{
+  font-size: 1rem;
+  color: var(--color-textoC);
+}
+img{
+    width: 80px;
+}
+.logo-oscuro { display: none; }
+
+
+body.dark-mode .logo-claro { display: none; }
+body.dark-mode .logo-oscuro { display: inline; }
+
+main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 30px;
+    gap: 20px;
+    
+}
+body.light-mode {
+  background-color: var(--color-secundarioC);
+  color: var(--color-textoC);
+}
+
+body.dark-mode {
+  background-color: var(--color-secundarioO);
+  color: var(--color-textoO);
+}
+#buscarla{    
+  border-right: 2px dashed var(--color-textoC);
+  padding-right: 20px;
+}
+
+body.dark-mode #buscarla {
+  border-right: 2px dashed var(--color-textoO);
+  height: 100%;
+}
+body.dark-mode #lista-buscadas li a {
+  color: var(--color-acentoC);
+}
+
+/* En modo claro */
+body.light-mode #lista-buscadas li a {
+  color: var(--color-acentoO);
+}
+
+/*LISTA*/
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+#buscarla {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 8px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #5a3d7a;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+
+/* 🔹 Ajuste del resultado del glosario */
+.resultado h2 {
+  font-weight: normal;       /* quita la negrita */
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: var(--color-primarioO);
+}
+
+body.dark-mode .resultado h2 {
+  color: var(--color-primarioC);
+}
+
+.resultado {
+  line-height: 1.6;
+  text-align: justify;
+}
+
