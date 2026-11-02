@@ -142,3 +142,9 @@ body.dark-mode .resultado h2 {
   text-align: justify;
 }
 
+/* CELULAR */
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+}
