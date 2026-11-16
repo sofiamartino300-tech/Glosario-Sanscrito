@@ -86,10 +86,12 @@ body.light-mode #lista-buscadas li a {
 
 /*LISTA*/
 .contenedor {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
   gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 #buscarla {
@@ -144,30 +146,40 @@ body.dark-mode .resultado h2 {
 
 @media (max-width: 768px) {
 
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
+  .contenedor {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
 
-    #logo {
-        margin-bottom: 15px;
-    }
+  #buscarla {
+    border-right: none;
+    padding-right: 0;
+  }
 
-    h1 {
-        font-size: 1.8rem;
-    }
+  .sidebar {
+    padding-left: 0;
+    padding-top: 20px;
+    border-top: 2px dashed #888;
+  }
 
-    h2 {
-        font-size: 1.2rem;
-    }
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
 
-    input {
-        width: 100%;
-        box-sizing: border-box;
-    }
+  #logo {
+    justify-content: center;
+  }
 
-    button {
-        width: 100%;
-        margin-top: 10px;
-    }
+  input,
+  button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  .resultado {
+    text-align: left;
+  }
 }
