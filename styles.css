@@ -42,6 +42,10 @@ body.light-mode #titulo{
   color: var(--color-textoC);
 }
 img{
+    max-width: 100%;
+    height: auto;
+}
+#logo img{
     width: 80px;
 }
 .logo-oscuro { display: none; }
@@ -140,8 +144,8 @@ body.dark-mode .resultado h2 {
 }
 
 .resultado {
-  line-height: 1.6;
-  text-align: justify;
+  line-height: 1.8;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
