@@ -142,9 +142,32 @@ body.dark-mode .resultado h2 {
   text-align: justify;
 }
 
-/* CELULAR */
 @media (max-width: 768px) {
-    .contenedor {
-        grid-template-columns: 1fr;
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo {
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
     }
 }
