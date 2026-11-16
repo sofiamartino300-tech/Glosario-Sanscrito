@@ -150,40 +150,96 @@ body.dark-mode .resultado h2 {
 
 @media (max-width: 768px) {
 
+  /* Layout general */
   .contenedor {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     padding: 15px;
+    box-sizing: border-box;
+    gap: 25px;
   }
 
+  /* Header */
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  #logo {
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #logo img {
+    width: 70px;
+  }
+
+  #titulo h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  #logo h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  /* Columna principal */
   #buscarla {
-    border-right: none;
+    flex: none;
+    width: 100%;
+    border-right: none !important;
     padding-right: 0;
   }
 
+  /* Sidebar */
   .sidebar {
+    flex: none;
+    width: 100%;
     padding-left: 0;
     padding-top: 20px;
     border-top: 2px dashed #888;
   }
 
-  header {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-
-  #logo {
-    justify-content: center;
-  }
-
+  /* Formulario */
   input,
   button {
     width: 100%;
     box-sizing: border-box;
+    font-size: 1rem;
     margin-bottom: 10px;
   }
 
+  button {
+    padding: 12px;
+  }
+
+  /* Resultado */
   .resultado {
+    width: 100%;
+    max-width: 100%;
     text-align: left;
+    line-height: 1.9;
+    font-size: 1.15rem;
+    margin-top: 20px;
+  }
+
+  .resultado h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+
+  /* Palabras más buscadas */
+  .sidebar h3 {
+    font-size: 1.5rem;
+  }
+
+  .sidebar ul {
+    font-size: 1.1rem;
   }
 }
+
